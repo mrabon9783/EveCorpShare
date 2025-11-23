@@ -1,0 +1,27 @@
+# config.yaml
+esi:
+  client_id: ""
+  client_secret: ""
+  # refresh token for a character with director/accountant roles in the holding corp
+  refresh_token: ""
+  # ESI base URL
+  base_url: "https://esi.evetech.net/latest"
+  # EVE SSO token endpoint
+  token_url: "https://login.eveonline.com/v2/oauth/token"
+
+corp:
+  corporation_id: 98791722        # Your holding corp ID
+  wallet_division: 1                # 1–7; which division you use for the “bank”
+
+
+custom:
+  discord_webhook: ""
+  share_unit_isk: 1000000000
+  alert_threshold: 50000000
+
+db:
+  path: "./ledger.db"
+
+janice:
+  api_key: "YOUR_JANICE_API_KEY"   # get your own, don't rely on the sample
+  url: "https://janice.e-351.com/api/rpc/v1?m=Appraisal.create"
